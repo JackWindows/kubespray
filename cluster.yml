@@ -32,6 +32,7 @@
     - { role: bootstrap-os, tags: bootstrap-os}
 
 - name: Gather facts
+  tags: always
   import_playbook: facts.yml
 
 - hosts: k8s-cluster:etcd
